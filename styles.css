@@ -1,0 +1,317 @@
+/* Reset CSS */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Styles pour le corps de la page */
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #f7f7f7; /* Couleur de fond légère et neutre */
+
+    color: #333;
+
+    line-height: 1.6;
+
+    transition: opacity 0.5s ease; /* Transition pour le corps */
+
+}
+
+
+
+/* Styles pour l'en-tête */
+
+header {
+
+    background: linear-gradient(45deg, #A575B7, #ff80ab); /* Dégradé moderne */
+
+    text-align: center;
+
+    padding: 20px 0;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    position: relative; /* Pour positionner le logo */
+
+    overflow: hidden; /* Pour les animations */
+
+}
+
+
+
+header .logo {
+
+    position: absolute;
+
+    top: 15px; /* Ajuste selon tes besoins */
+
+    left: 15px; /* Ajuste selon tes besoins */
+
+    width: 50px; /* Ajuste la taille selon tes besoins */
+
+    height: auto;
+
+}
+
+
+
+header h1 {
+
+    font-size: 36px;
+
+    color: #ffffff; /* Couleur blanche pour contraster avec le dégradé */
+
+    margin-left: 70px; /* Pour éviter que le texte ne chevauche le logo */
+
+    font-family: 'Pacifico', cursive; /* Une police élégante pour le titre */
+
+    position: relative;
+
+    animation: slideIn 1s forwards; /* Animation de slide */
+
+}
+
+
+
+@keyframes slideIn {
+
+    0% {
+
+        left: -100%;
+
+    }
+
+    100% {
+
+        left: 0;
+
+    }
+
+}
+
+
+
+/* Styles pour la barre de navigation */
+
+nav {
+
+    background-color: #ffffff; /* Fond blanc moderne */
+
+    text-align: center;
+
+    padding: 15px 0;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+
+nav a {
+
+    color: #5F1A77; /* Couleur rose vif moderne */
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-size: 18px;
+
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+
+
+nav a:hover {
+
+    color: #ff80ab; /* Couleur plus claire pour l'effet hover */
+
+    transform: scale(1.1); /* Légère augmentation de taille */
+
+}
+
+
+
+/* Styles pour les sections */
+
+section {
+
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    max-width: 800px; /* Largeur maximale pour les sections */
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+
+
+section:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+section h2 {
+
+    font-size: 28px;
+    text-align: center;
+
+    color: #5F1A77; /* Couleur moderne */
+
+    margin-bottom: 15px;
+
+}
+section h3 {
+
+position: relative;
+width: 100%;
+bottom: 10px;
+left: 620px;
+padding: 5px 10px;
+border-radius: 5px;
+    font-size: 28px;
+    text-align: bottom-right-text;
+
+    color: #5F1A77; /* Couleur moderne */
+
+    margin-bottom: 5px;
+
+}
+
+
+section p, section ul {
+
+    color: #616161; /* Gris foncé */
+    text-align: center;
+
+}
+
+
+
+section ul {
+
+    list-style-type: none;
+
+}
+
+
+
+section ul li {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Styles pour la galerie d'images */
+
+.gallery {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+
+.gallery img {
+
+    width: 200px;
+
+    margin: 10px;
+
+    border-radius: 10px;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.gallery img:hover {
+
+    transform: scale(1.1);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* Styles pour le pied de page */
+
+footer {
+
+    background: linear-gradient(45deg, #A575B7, #ff80ab); /* Dégradé moderne */
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 15px 0;
+
+    position: fixed;
+
+    width: 100%;
+
+    bottom: 0;
+
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Styles pour les transitions de page */
+
+.fade-enter-active, .fade-leave-active {
+
+    transition: opacity 0.5s ease;
+
+}
+
+
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+
+    opacity: 0;
+
+}
+
