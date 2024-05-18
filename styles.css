@@ -194,15 +194,7 @@ section h2 {
 }
 section h3 {
 
-position: relative;
-width: 100%;
-bottom: 10px;
-left: 10px;
-    right: 50px;
-padding: 5px 10px;
-border-radius: 5px;
-    font-size: 28px;
-    text-align: bottom-right-text;
+text-align: center
 
     color: #5F1A77; /* Couleur moderne */
 
